@@ -29,5 +29,5 @@ npm run hot
 
 src文件夹下，`global`是全局的scss/jsx，`public`是公用的组件，其余为分别的模块；
 
-特别注意：`src/components/global/_varible.scss 可以定义全局的css样式
-      `src/components/global/global.js 可以定义全局的配置，如模块的名字，注意修改模块的名字后，src/components的分模块名字也对应修改，包括模块下的jsx，scss最好也一起修改
+特别注意：`src/components/global/_varible.scss` 可以定义全局的css样式
+      `src/components/global/global.js` 可以定义全局的配置，如模块的名字，注意修改模块的名字后，src/components的分模块名字也对应修改，包括模块下的jsx，scss最好也一起修改
