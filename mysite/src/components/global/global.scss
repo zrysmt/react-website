@@ -1,0 +1,9 @@
+@import 'reset';
+@import 'varible';
+@import 'mediaQuery';
+html {
+    font-family: $gFontFamily;
+    background-color:$gBackGroundColor;
+}
+
+

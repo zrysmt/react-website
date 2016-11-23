@@ -1,0 +1,10 @@
+@import '../global/varible';
+@import '../public/articleTop';
+.home-top{
+	img{	
+		margin-top: $articleTopMarginTop; //0.5+0.5+0.8*1.35
+    	width: 100%;
+    	height: $articleTopImgHight;
+		background: url(../../asserts/homepic.jpg) no-repeat;
+	}
+}

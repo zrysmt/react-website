@@ -1,0 +1,28 @@
+@import 'varible';
+ul#menu {
+        margin: 0 auto;  
+        width:$gMainContentWidth;
+        font-size: 0.8rem;
+        margin-bottom: 0.5em;
+        margin-top: 0.5em;
+        text-align: center;
+        position: relative;
+        z-index: 999;
+        li {
+    		display: inline-block;
+            list-style-type: none;
+            margin-left: 0.75em;
+            margin-right: 0.75em;
+            line-height: 1.5;
+            > *{ 
+              color: $liFontColor;
+              &:hover{
+                cursor: pointer;
+                color: $liHoverColor;
+              }
+            }
+            .active{
+                color: $liActiveColor;
+            }
+        }
+}
