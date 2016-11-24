@@ -22,6 +22,8 @@ module.exports = {
             // {test:/\.js?$/,exclude: /node_modules/,loader:'jsx-loader?harmony'},//支持react
             // {test:/\.js?$/,exclude: /node_modules/,loader:'babel?presets[]=react,presets[]=es2015'},//同时支持es6 react或者
             { test: /\.jsx?$/, exclude: /node_modules/, loader: 'babel', query: { presets: ['es2015', 'react'] } }, //同时支持es6 react
+            /* { test: /\.css$/, loader: "style!css" },
+            { test: /\.scss$/, loader: "style!css!sass" },*/
             { test: /\.css$/, loader:ExtractTextPlugin.extract("style-loader", "css-loader") },
             { test: /\.scss$/, loader:ExtractTextPlugin.extract("style-loader", "css-loader!sass-loader") }, //sass加载器
             { test: /\.(jpg|png)$/, loader: "url?limit=8192&name=build/asserts/[name].[ext]"}
