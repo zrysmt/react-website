@@ -1,13 +1,15 @@
 $viewport-increment: 0.1px; // customize to suite
 // Desktop
-$desktop: 1024px; // customize to suite
+$desktop: 1024px; // destop
 $pre-desktop: $desktop - $viewport-increment;
 // Tablet
-$tablet: 768px; // customize to suite
+$tablet: 768px; // ipad
 $pre-tablet: $tablet - $viewport-increment;
 // Palm
-$palm: 640px; // customize to suite
+$palm: 640px; // iphone
 $post-palm: $palm + $viewport-increment;
+$android: 480px;
+$pre-android:$android - $viewport-increment;
 // Constraints
 $min: min-width;
 $max: max-width;
@@ -31,16 +33,19 @@ $max: max-width;
 }
 
 html {
-    @include mediaQuery($max, $palm) { //x <640px
-        font-size: 75% !important;
+    @include mediaQuery($max, $pre-android) { //x < 480-0.1
+        font-size: 50% !important;//1rem = 8px;
     }
-    @include mediaQuery(null, $post-palm, $pre-tablet) { //640px > x < 768px
-        font-size: 87.5% !important;
+    @include mediaQuery($min, $android) { //480px < x 
+        font-size: 62.5% !important;//1rem = 10px;
     }
-    @include mediaQuery(null, $tablet,$pre-desktop) { // 768px < x < 1024px
-        font-size: 90% !important;
+    @include mediaQuery($min, $palm) { // 640px < x 
+        font-size: 125% !important;//1rem = 20px
     }
-    @include mediaQuery($min, $desktop) {//x > 1024px
-        font-size: 125% !important;
+    @include mediaQuery($min, $tablet) { // 768px < x 
+        font-size: 150% !important;//1rem = 24px
+    }
+    @include mediaQuery($min, $desktop) {// 1024px < x
+        font-size: 187.5% !important;//1rem = 30px
     }
 }
