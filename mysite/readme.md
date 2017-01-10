@@ -3,7 +3,7 @@
 # 1.编译
 - 安装
 ```bash
-npm init
+npm install
 ```
 - 编译
 ```bash
