@@ -38,6 +38,7 @@ module.exports = {
           'react-dom',
           'react-router/lib/Router',
           'react-router/lib/browserHistory',
+          'echarts',
           'jquery'
       ]
   },

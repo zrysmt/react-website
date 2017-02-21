@@ -18,8 +18,8 @@ class MenuLi extends React.Component{
 		    onlyActiveOnIndexBool = enTitle == "home"?true:false,
 		    activeClass = enTitle == "home"?"":"active";
 		return (
-			<li >
-				<Link to={linkTo}  activeClassName={activeClass} onlyActiveOnIndex={onlyActiveOnIndexBool}>
+			<li>
+				<Link to={linkTo} activeClassName="active" onlyActiveOnIndex={onlyActiveOnIndexBool} >
 					{title}
 				</Link>
 			</li>
@@ -46,7 +46,10 @@ class Header extends React.Component{
 			<div id="header">
 				<div className="h-l-title">{siteObj.title}</div>
 					<MenuUl/>
-					<div className="h-r-usr">ZhaoRuyi</div>			
+					<div className="h-r-usr">
+						<span className="usrname">ZhaoRuyi</span>
+						<span className="down-arrow"></span>
+					</div>			
 			</div>
 		)
 	}
