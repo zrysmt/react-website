@@ -1,0 +1,35 @@
+@import '../../common/varible';
+
+#header{
+    display: -webkit-flex;
+    display: flex;
+    height: 75px;
+    background-color: $cBColor;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 22px;
+    color: #f5f5f5;
+    .h-l-title{
+        color: $gTColor;
+    }
+
+    .h-r-usr{
+        font-size: 18px;
+        font-weight: normal;
+        margin-left: 25px;
+        margin-right: 25px;
+    }
+    ul{
+        li{
+            display: inline-block;
+            margin-left: 0.1rem;
+            margin-right: 0.1rem;
+            a{
+                font-size: 18px;
+                font-weight: normal;
+                color:#f5f5f5 !important;
+            }
+        }
+    }
+}
+
